@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE why3session PUBLIC "-//Why3//proof session v5//EN"
+"http://why3.lri.fr/why3session.dtd">
+<why3session shape_version="5">
+<prover id="0" name="Alt-Ergo" version="2.2.0" timelimit="1" steplimit="0" memlimit="1000"/>
+<prover id="1" name="CVC4" version="1.6" timelimit="1" steplimit="0" memlimit="1000"/>
+<file name="../tp2.mlw">
+<theory name="Ex1" proved="true">
+ <goal name="VC f1" expl="VC for f1" proved="true">
+ <proof prover="0" obsolete="true"><result status="unknown" time="0.01"/></proof>
+ <proof prover="1"><result status="valid" time="0.01"/></proof>
+ <transf name="split_vc" >
+  <goal name="VC f1.0" expl="loop invariant init">
+  </goal>
+  <goal name="VC f1.1" expl="loop variant decrease">
+  </goal>
+  <goal name="VC f1.2" expl="loop invariant preservation">
+  </goal>
+  <goal name="VC f1.3" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC f2" expl="VC for f2" proved="true">
+ <proof prover="0" obsolete="true"><result status="unknown" time="0.01"/></proof>
+ <proof prover="1"><result status="valid" time="0.01"/></proof>
+ </goal>
+</theory>
+<theory name="Ex2" proved="true">
+ <goal name="VC somme_tab" expl="VC for somme_tab" proved="true">
+ <proof prover="0" timelimit="5" obsolete="true"><result status="timeout" time="5.00"/></proof>
+ <proof prover="1" obsolete="true"><result status="timeout" time="1.00"/></proof>
+ <transf name="split_vc" proved="true" >
+  <goal name="VC somme_tab.0" expl="loop invariant init" proved="true">
+  <proof prover="0" obsolete="true"><result status="timeout" time="1.00"/></proof>
+  <proof prover="1"><result status="valid" time="0.02"/></proof>
+  </goal>
+  <goal name="VC somme_tab.1" expl="index in array bounds" proved="true">
+  <proof prover="1"><result status="valid" time="0.02"/></proof>
+  </goal>
+  <goal name="VC somme_tab.2" expl="loop invariant preservation" proved="true">
+  <proof prover="0" obsolete="true"><result status="timeout" time="1.00"/></proof>
+  <proof prover="1"><result status="valid" time="0.02"/></proof>
+  </goal>
+  <goal name="VC somme_tab.3" expl="postcondition" proved="true">
+  <proof prover="0" obsolete="true"><result status="timeout" time="1.00"/></proof>
+  <proof prover="1"><result status="valid" time="0.02"/></proof>
+  </goal>
+  <goal name="VC somme_tab.4" expl="postcondition" proved="true">
+  <proof prover="0" obsolete="true"><result status="timeout" time="1.00"/></proof>
+  <proof prover="1"><result status="valid" time="0.02"/></proof>
+  </goal>
+  <goal name="VC somme_tab.5">
+  <proof prover="1"><undone/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Ex2Test">
+ <goal name="VC test" expl="VC for test">
+ <proof prover="0" obsolete="true"><result status="timeout" time="1.00"/></proof>
+ <proof prover="1" obsolete="true"><result status="timeout" time="1.00"/></proof>
+ <transf name="split_vc" >
+  <goal name="VC test.0" expl="array creation size" proved="true">
+  <proof prover="1"><result status="valid" time="0.01"/></proof>
+  </goal>
+  <goal name="VC test.1" expl="precondition" proved="true">
+  <proof prover="0" obsolete="true"><result status="unknown" time="0.01"/></proof>
+  <proof prover="1"><result status="valid" time="0.02"/></proof>
+  </goal>
+  <goal name="VC test.2" expl="assertion">
+  <proof prover="1" obsolete="true"><result status="valid" time="0.12"/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Ex3">
+ <goal name="VC division" expl="VC for division">
+ <proof prover="0" obsolete="true"><result status="unknown" time="0.05"/></proof>
+ <proof prover="1" obsolete="true"><result status="unknown" time="0.03"/></proof>
+ <transf name="split_vc" >
+  <goal name="VC division.0" expl="loop invariant init">
+  <proof prover="0"><result status="unknown" time="0.01"/></proof>
+  <proof prover="1"><result status="unknown" time="0.03"/></proof>
+  </goal>
+  <goal name="VC division.1" expl="loop variant decrease" proved="true">
+  <proof prover="0" obsolete="true"><result status="unknown" time="0.01"/></proof>
+  <proof prover="1"><result status="valid" time="0.02"/></proof>
+  </goal>
+  <goal name="VC division.2" expl="loop invariant preservation" proved="true">
+  <proof prover="1"><result status="valid" time="0.05"/></proof>
+  </goal>
+  <goal name="VC division.3" expl="postcondition" proved="true">
+  <proof prover="0" obsolete="true"><result status="unknown" time="0.01"/></proof>
+  <proof prover="1"><result status="valid" time="0.01"/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Ex3Tests">
+ <goal name="VC mon_test" expl="VC for mon_test">
+ <proof prover="0" obsolete="true"><result status="unknown" time="0.01"/></proof>
+ <proof prover="1" obsolete="true"><result status="unknown" time="0.04"/></proof>
+ <transf name="split_vc" >
+  <goal name="VC mon_test.0" expl="precondition" proved="true">
+  <proof prover="1"><result status="valid" time="0.01"/></proof>
+  </goal>
+  <goal name="VC mon_test.1" expl="assertion">
+  <proof prover="0" obsolete="true"><result status="unknown" time="0.01"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" time="0.04"/></proof>
+  </goal>
+  <goal name="VC mon_test.2" expl="precondition">
+  <proof prover="1" obsolete="true"><result status="valid" time="0.01"/></proof>
+  </goal>
+  <goal name="VC mon_test.3" expl="assertion">
+  <proof prover="0" obsolete="true"><result status="unknown" time="0.00"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" time="0.03"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC mon_test2" expl="VC for mon_test2">
+ <proof prover="0" obsolete="true"><result status="unknown" time="0.01"/></proof>
+ <proof prover="1" obsolete="true"><result status="unknown" time="0.03"/></proof>
+ </goal>
+</theory>
+</file>
+</why3session>

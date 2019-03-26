@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fr.istic.prg1.tp4.TestSmallSet" tests="15" skipped="0" failures="0" errors="0" timestamp="2018-10-25T18:02:27" hostname="archinspiron" time="0.072">
+  <properties/>
+  <testcase name="testAdd()" classname="fr.istic.prg1.tp4.TestSmallSet" time="0.002"/>
+  <testcase name="testEmptySetSize()" classname="fr.istic.prg1.tp4.TestSmallSet" time="0.002"/>
+  <testcase name="testComplement()" classname="fr.istic.prg1.tp4.TestSmallSet" time="0.002"/>
+  <testcase name="testClear()" classname="fr.istic.prg1.tp4.TestSmallSet" time="0.002"/>
+  <testcase name="testClone()" classname="fr.istic.prg1.tp4.TestSmallSet" time="0.001"/>
+  <testcase name="testEmpty()" classname="fr.istic.prg1.tp4.TestSmallSet" time="0.001"/>
+  <testcase name="testUnion()" classname="fr.istic.prg1.tp4.TestSmallSet" time="0.001"/>
+  <testcase name="testAddInterval()" classname="fr.istic.prg1.tp4.TestSmallSet" time="0.005"/>
+  <testcase name="testSymmetricDifference()" classname="fr.istic.prg1.tp4.TestSmallSet" time="0.002"/>
+  <testcase name="testIsIncludedIn()" classname="fr.istic.prg1.tp4.TestSmallSet" time="0.001"/>
+  <testcase name="testContains()" classname="fr.istic.prg1.tp4.TestSmallSet" time="0.002"/>
+  <testcase name="testDifference()" classname="fr.istic.prg1.tp4.TestSmallSet" time="0.002"/>
+  <testcase name="testEquals()" classname="fr.istic.prg1.tp4.TestSmallSet" time="0.002"/>
+  <testcase name="testRemove()" classname="fr.istic.prg1.tp4.TestSmallSet" time="0.001"/>
+  <testcase name="testRemoveInterval()" classname="fr.istic.prg1.tp4.TestSmallSet" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

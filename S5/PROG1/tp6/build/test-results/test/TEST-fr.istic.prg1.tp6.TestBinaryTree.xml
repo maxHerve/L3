@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fr.istic.prg1.tp6.TestBinaryTree" tests="40" skipped="0" failures="0" errors="0" timestamp="2018-11-24T16:25:34" hostname="archTest" time="0.185">
+  <properties/>
+  <testcase name="TestGoRight1()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.012"/>
+  <testcase name="TestGoRight2()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.001"/>
+  <testcase name="TestGoRight3()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.001"/>
+  <testcase name="TestGoRight4()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.001"/>
+  <testcase name="TestGetValue1()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.006"/>
+  <testcase name="TestRemove1()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.002"/>
+  <testcase name="TestRemove2()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.002"/>
+  <testcase name="TestRemove3()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.0"/>
+  <testcase name="TestRemove4()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.0"/>
+  <testcase name="TestRemove5()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.001"/>
+  <testcase name="TestTreeIsEmpty1()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.001"/>
+  <testcase name="TestTreeIsEmpty2()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.001"/>
+  <testcase name="TestClear1()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.001"/>
+  <testcase name="TestClear2()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.001"/>
+  <testcase name="TestClear3()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.005"/>
+  <testcase name="TestIsEmpty1()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.001"/>
+  <testcase name="TestIsEmpty2()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.01"/>
+  <testcase name="TestIsEmpty3()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.008"/>
+  <testcase name="TestIsEmpty4()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.003"/>
+  <testcase name="TestGoUp1()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.002"/>
+  <testcase name="TestGoUp2()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.001"/>
+  <testcase name="TestGoUp3()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.001"/>
+  <testcase name="TestGoLeft1()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.003"/>
+  <testcase name="TestGoLeft2()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.001"/>
+  <testcase name="TestGoLeft3()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.006"/>
+  <testcase name="TestGoRoot1()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.001"/>
+  <testcase name="TestGoRoot2()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.001"/>
+  <testcase name="TestGoRoot3()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.001"/>
+  <testcase name="TestSwitchValue1()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.002"/>
+  <testcase name="TestSwitchValue2()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.002"/>
+  <testcase name="TestSwitchValue3()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.0"/>
+  <testcase name="TestAddValue1()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.001"/>
+  <testcase name="TestAddValue2()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.001"/>
+  <testcase name="TestAddValue4()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.001"/>
+  <testcase name="TestNodeType1()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.004"/>
+  <testcase name="TestNodeType3()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.001"/>
+  <testcase name="TestNodeType4()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.001"/>
+  <testcase name="TestNodeType5()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.001"/>
+  <testcase name="TestSetValue1()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.001"/>
+  <testcase name="TestSetValue2()" classname="fr.istic.prg1.tp6.TestBinaryTree" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

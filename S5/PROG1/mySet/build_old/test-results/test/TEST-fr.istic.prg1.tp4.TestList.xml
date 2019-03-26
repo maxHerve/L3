@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fr.istic.prg1.tp4.TestList" tests="8" skipped="0" failures="0" errors="0" timestamp="2018-10-25T18:02:27" hostname="archinspiron" time="0.096">
+  <properties/>
+  <testcase name="testAddLeft()" classname="fr.istic.prg1.tp4.TestList" time="0.052"/>
+  <testcase name="testAddRight()" classname="fr.istic.prg1.tp4.TestList" time="0.004"/>
+  <testcase name="testGetSize()" classname="fr.istic.prg1.tp4.TestList" time="0.002"/>
+  <testcase name="testIsOnFlag()" classname="fr.istic.prg1.tp4.TestList" time="0.002"/>
+  <testcase name="testIsEmpty()" classname="fr.istic.prg1.tp4.TestList" time="0.002"/>
+  <testcase name="testRemove()" classname="fr.istic.prg1.tp4.TestList" time="0.003"/>
+  <testcase name="testSetValue()" classname="fr.istic.prg1.tp4.TestList" time="0.004"/>
+  <testcase name="testNonEmptyListSize()" classname="fr.istic.prg1.tp4.TestList" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

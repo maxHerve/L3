@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fr.istic.prg1.tp4.TestMySet" tests="18" skipped="0" failures="0" errors="0" timestamp="2018-10-25T18:02:27" hostname="archinspiron" time="0.42">
+  <properties/>
+  <testcase name="removeUserInput()" classname="fr.istic.prg1.tp4.TestMySet" time="0.18"/>
+  <testcase name="testAdd()" classname="fr.istic.prg1.tp4.TestMySet" time="0.004"/>
+  <testcase name="testEmptySetSize()" classname="fr.istic.prg1.tp4.TestMySet" time="0.001"/>
+  <testcase name="testUnion()" classname="fr.istic.prg1.tp4.TestMySet" time="0.002"/>
+  <testcase name="testSave()" classname="fr.istic.prg1.tp4.TestMySet" time="0.057"/>
+  <testcase name="testSize()" classname="fr.istic.prg1.tp4.TestMySet" time="0.001"/>
+  <testcase name="containsUserInput()" classname="fr.istic.prg1.tp4.TestMySet" time="0.051"/>
+  <testcase name="testToString()" classname="fr.istic.prg1.tp4.TestMySet" time="0.031"/>
+  <testcase name="testSymmetricDifference()" classname="fr.istic.prg1.tp4.TestMySet" time="0.002"/>
+  <testcase name="testIsIncludedIn()" classname="fr.istic.prg1.tp4.TestMySet" time="0.003"/>
+  <testcase name="testContains()" classname="fr.istic.prg1.tp4.TestMySet" time="0.006"/>
+  <testcase name="addUserInput()" classname="fr.istic.prg1.tp4.TestMySet" time="0.022"/>
+  <testcase name="testRestore()" classname="fr.istic.prg1.tp4.TestMySet" time="0.008"/>
+  <testcase name="testDifference()" classname="fr.istic.prg1.tp4.TestMySet" time="0.003"/>
+  <testcase name="testIntersection()" classname="fr.istic.prg1.tp4.TestMySet" time="0.001"/>
+  <testcase name="testEquals()" classname="fr.istic.prg1.tp4.TestMySet" time="0.003"/>
+  <testcase name="testRemove()" classname="fr.istic.prg1.tp4.TestMySet" time="0.003"/>
+  <testcase name="testUnionWithOneEmptySet()" classname="fr.istic.prg1.tp4.TestMySet" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

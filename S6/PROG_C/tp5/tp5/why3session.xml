@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE why3session PUBLIC "-//Why3//proof session v5//EN"
+"http://why3.lri.fr/why3session.dtd">
+<why3session shape_version="5">
+<prover id="0" name="CVC4" version="1.6" timelimit="1" steplimit="0" memlimit="1000"/>
+<prover id="1" name="Alt-Ergo" version="2.2.0" timelimit="10" steplimit="0" memlimit="4000"/>
+<file name="../tp5.mlw" proved="true">
+<theory name="TableauCirculaireSeq">
+ <goal name="VC tableauCirculaire">
+ <proof prover="0"><result status="valid" time="0.04"/></proof>
+ </goal>
+ <goal name="VC longueur">
+ <proof prover="0"><result status="valid" time="0.02"/></proof>
+ </goal>
+ <goal name="VC push">
+ <proof prover="0"><result status="valid" time="0.17"/></proof>
+ </goal>
+</theory>
+<theory name="Test2">
+ <goal name="VC test">
+ <proof prover="0"><result status="valid" time="0.21"/></proof>
+ </goal>
+ <goal name="VC test2">
+ <proof prover="0"><result status="valid" time="0.31"/></proof>
+ </goal>
+</theory>
+<theory name="Test1">
+ <goal name="VC test">
+ <proof prover="0"><result status="valid" time="0.21"/></proof>
+ </goal>
+ <goal name="VC test2">
+ <proof prover="0"><result status="valid" time="0.47"/></proof>
+ </goal>
+ <goal name="VC test3">
+ <proof prover="0"><result status="valid" time="0.18"/></proof>
+ </goal>
+ <goal name="VC test4">
+ <proof prover="0"><result status="valid" time="0.07"/></proof>
+ </goal>
+</theory>
+<theory name="TableauCirculaire">
+ <goal name="VC tableauCirculaire">
+ <proof prover="0"><result status="valid" time="0.04"/></proof>
+ </goal>
+ <goal name="VC creer">
+ <proof prover="0"><result status="valid" time="0.04"/></proof>
+ <proof prover="1" timelimit="1" memlimit="1000" obsolete="true"><result status="unknown" time="0.01"/></proof>
+ <transf name="split_all_full" >
+  <goal name="VC creer.0">
+  <proof prover="0" obsolete="true"><result status="valid" time="0.03"/></proof>
+  </goal>
+  <goal name="VC creer.1">
+  <proof prover="0" obsolete="true"><result status="valid" time="0.04"/></proof>
+  </goal>
+  <goal name="VC creer.2">
+  <proof prover="0" timelimit="10" memlimit="4000" obsolete="true"><result status="unknown" time="8.03"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" time="0.01"/></proof>
+  </goal>
+  <goal name="VC creer.3">
+  <proof prover="0" obsolete="true"><result status="valid" time="0.03"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC longueur">
+ <proof prover="0"><result status="valid" time="0.02"/></proof>
+ </goal>
+ <goal name="VC push">
+ <proof prover="0"><result status="valid" time="0.57"/></proof>
+ </goal>
+</theory>
+</file>
+</why3session>

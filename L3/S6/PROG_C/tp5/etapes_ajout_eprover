@@ -1,0 +1,7 @@
+#!/bin/bash
+# Instructions installation eprover
+tar xvzf E.tgz
+cd E
+configure --bindir=~/E/
+make && make install
+why3 config --add-prover eprover ~/E/eprover

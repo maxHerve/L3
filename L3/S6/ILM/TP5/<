@@ -1,0 +1,38 @@
+      .equ KEYBOARD, 0x8000FF00
+      .equ CONSOLE, 0x80007040
+
+	    .data
+mess:	.asciz "Hello world from NIOS II processor\n"
+	    .align	4
+	    .set noat
+
+	    .text
+	    .align	4
+	    .global	main
+
+main:
+	addi    r4,zero,mess
+	call    print_string
+	beq     zero,zero,main
+
+print_string:
+	add 	  r2,zero,r4
+loop:
+	ldb	    r3,(r2)
+	addi r16,r0,CONSOLE
+	stbio   r2,0(r16)
+	beq     r3,zero, eos
+	addi    r2,r2,1
+	beq     zero,zero,	loop
+eos:
+	ret
+
+getc:
+	movia	  r4,KEYBOARD
+polling:
+	ldwio	  r5,4(r4)
+	beq     r5,zero,polling
+	ldwio	  r5,0(r4)
+	stwio   r5,0(r4)
+	ret
+

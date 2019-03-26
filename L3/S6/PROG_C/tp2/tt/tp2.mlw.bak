@@ -1,0 +1,132 @@
+(* SATTLER Donatien
+   HERVE Maxime *)
+module Ex1
+  use int.Int
+  use ref.Ref
+
+  let f1 () : int
+    ensures{ result = 100 } =
+    let n = ref 0 in
+    while !n < 100  do
+      invariant{ 0 <= !n <= 100 }
+      variant{ 100 - !n }
+      n := !n + 1
+    done;
+    !n
+
+  let f2 () : int
+    ensures{ result = 0 } =
+    let n = ref 100 in
+    while !n > 0  do
+      invariant{ 0 <= !n <= 100 }
+      variant{ !n }
+      n := !n - 1
+    done;
+    !n
+
+end
+
+module Ex2
+  use int.Int
+  use ref.Ref
+  use ref.Refint
+  use array.Array
+  use array.ArraySum
+
+  let somme_tab (a: array int) : int
+  requires { forall i:int . (0 <= i < (length a)) -> (a[i] >= 0) }
+  ensures { result = sum a 0 (length a) }
+  = 
+  let somme = ref 0 in
+    for i = 0 to (length a - 1) do
+      invariant{ !somme = sum a 0 i }
+      somme := !somme + a[i];
+    done;
+  !somme
+
+end
+
+module Ex2Test
+  use Ex2
+  use array.Array
+  
+  let test () =
+    let tab = make 10 3 in
+    let tmp = somme_tab tab in
+    assert{ tmp = 30 }
+
+end
+
+module Ex3
+  use int.Int
+  use ref.Refint
+
+  let division (a b: int) : int
+  requires { a > 0 /\ b > 0}
+  ensures { exists r:int . (b*result + r = a) /\ r < b /\ r >= 0 /\ result >= 0}
+  =
+  let quotient = ref 0 in
+  let reste = ref a in
+      while !reste >= b do
+        invariant { a = b * !quotient + !reste /\ !reste >= 0 }
+        variant { !reste - b }
+        reste := !reste - b;
+        incr quotient;
+      done;
+  !quotient
+end
+
+module Ex3Tests
+  use int.Int
+  use Ex3
+  
+  let mon_test () =
+    let q = division 12 3 in
+      assert { q  = 4 };
+    let q2 = division 13 3 in
+      assert { q2  = 4 }
+
+  let mon_test2 () =
+    let q = division 100 4 in
+      assert { q  = 25 }
+
+
+end
+
+module Ex4
+  use ref.Refint
+  use ref.Ref
+  use Ex3
+  use number.Gcd
+
+  let pgcd (a b: int) : int
+  requires { a > 0 /\ b > 0 }
+  ensures { forall diviseur:int . (result >= diviseur) /\ (a - (b*diviseur) = 0) /\ (a - (b*result) = 0) }
+  =
+  let reste = ref 0 in
+  let tmpA = ref a in
+  let tmpB = ref b in
+    while !tmpB > 0 do
+      invariant { !reste < !tmpA}
+      variant { !reste }
+      reste := !tmpA - (division !tmpA !tmpB);
+      tmpA := !tmpB;
+      tmpB := !reste;
+    done;
+    !tmpA
+end
+
+module Ex4Test
+  use ref.Refint
+  use Ex4
+  
+  let mon_test () =
+    let q = pgcd 12 3 in
+      assert { q  = 4 };
+    let q2 = pgcd 3 12 in
+      assert { q2  = 4 };
+    let q3 = pgcd 1 2 in
+      assert { q3  = 1 };
+    let q4 = pgcd 96 81 in
+      assert { q4  = 3 }
+end

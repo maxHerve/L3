@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE why3session PUBLIC "-//Why3//proof session v5//EN"
+"http://why3.lri.fr/why3session.dtd">
+<why3session shape_version="5">
+<prover id="0" name="CVC4" version="1.6" timelimit="1" steplimit="0" memlimit="1000"/>
+<file name="../tp2.mlw">
+<theory name="Ex1" proved="true">
+ <goal name="VC f1" expl="VC for f1" proved="true">
+ <proof prover="0"><result status="valid" time="0.02"/></proof>
+ </goal>
+ <goal name="VC f2" expl="VC for f2" proved="true">
+ <proof prover="0"><result status="valid" time="0.02"/></proof>
+ </goal>
+</theory>
+<theory name="Ex2" proved="true">
+ <goal name="VC somme_tab" expl="VC for somme_tab" proved="true">
+ <proof prover="0"><result status="valid" time="0.05"/></proof>
+ </goal>
+</theory>
+<theory name="Ex2Test" proved="true">
+ <goal name="VC test" expl="VC for test" proved="true">
+ <proof prover="0"><result status="valid" time="0.29"/></proof>
+ </goal>
+</theory>
+<theory name="Ex3">
+ <goal name="VC division" expl="VC for division">
+ <proof prover="0" obsolete="true"><result status="unknown" time="0.09"/></proof>
+ <transf name="split_vc" >
+  <goal name="VC division.0" expl="termination">
+  <proof prover="0" obsolete="true"><undone/></proof>
+  </goal>
+  <goal name="VC division.1" expl="postcondition">
+  <proof prover="0" obsolete="true"><result status="unknown" time="0.05"/></proof>
+  </goal>
+  <goal name="VC division.2">
+  <proof prover="0"><undone/></proof>
+  </goal>
+  <goal name="VC division.0">
+  <proof prover="0"><undone/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Ex3Tests">
+ <goal name="VC mon_test" expl="VC for mon_test">
+ <proof prover="0" obsolete="true"><result status="unknown" time="0.07"/></proof>
+ <transf name="split_vc" >
+  <goal name="VC mon_test.0" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.01"/></proof>
+  </goal>
+  <goal name="VC mon_test.1" expl="termination">
+  <proof prover="0"><result status="unknown" time="0.06"/></proof>
+  </goal>
+  <goal name="VC mon_test.2" expl="assertion" proved="true">
+  <proof prover="0"><result status="valid" time="0.01"/></proof>
+  </goal>
+  <goal name="VC mon_test.3" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.01"/></proof>
+  </goal>
+  <goal name="VC mon_test.4" expl="termination">
+  <proof prover="0"><result status="unknown" time="0.06"/></proof>
+  </goal>
+  <goal name="VC mon_test.5" expl="assertion" proved="true">
+  <proof prover="0"><result status="valid" time="0.01"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC mon_test2" expl="VC for mon_test2">
+ <proof prover="0" obsolete="true"><result status="unknown" time="0.07"/></proof>
+ <transf name="split_vc" >
+  <goal name="VC mon_test2.0" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.01"/></proof>
+  </goal>
+  <goal name="VC mon_test2.1" expl="termination">
+  <proof prover="0"><result status="unknown" time="0.05"/></proof>
+  </goal>
+  <goal name="VC mon_test2.2" expl="assertion" proved="true">
+  <proof prover="0"><result status="valid" time="0.01"/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+</file>
+</why3session>

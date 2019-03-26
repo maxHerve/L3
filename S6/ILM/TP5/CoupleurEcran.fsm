@@ -1,0 +1,18 @@
+state_machine CoupleurEcran @[50,50,800,500]{
+	in CS[1]   @[50,118,23,15];IOWR_REQ[1]   @[50,134,71,15];
+	out IO_ACK[1]   @[801,107,49,15];WRITE[1]   @[806,131,44,15];
+	codeWidth = 2;
+	reset = S0;
+	
+	state S0["00"]:
+	 	@[223,232,30,30]
+		goto S1  when (CS.IOWR_REQ)   @[370,199,99,22]; 
+	state S1["01"]:
+	 	@[551,235,30,30]
+		set WRITE="1";  @[551,235,30,30]	
+		goto S2  when default   @[559,316,43,22]; 
+	state S2["10"]:
+	 	@[540,362,30,30]
+		set IO_ACK="1";  @[540,362,30,30]	
+		goto S0  when default   @[394,320,43,22]; 
+}
